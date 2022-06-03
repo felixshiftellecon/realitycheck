@@ -13,7 +13,6 @@ resource_job_defaults: &resource_job_defaults
             echo "CIRCLE_TOKEN: Should be the API Key of an admin or project level with Scope:All"
             exit 1
           fi
-          echo ${CIRCLE_HOSTNAME}
     - run:
         name: verify that job ran with the requested resource_class option
         command: |
